@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Niketa Muschette - Portfolio</title>
+
+<style>
+:root {
+    --main-pink: #ff66b2;
+    --light-pink: #ffe6f2;
+    --dark-pink: #cc0066;
+    --card-bg: #ffffff;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    background-color: var(--light-pink);
+    color: #333;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+section {
+    background: var(--card-bg);
+    margin: 40px auto;
+    padding: 40px;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+header {
+    background: var(--main-pink);
+    color: white;
+    padding: 30px 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-left img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+.about-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid var(--main-pink);
+    object-fit: cover;
+}
+
+.resume-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: var(--light-pink);
+    padding: 20px;
+    border-radius: 12px;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--main-pink);
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: var(--dark-pink);
+}
+
+footer {
+    background: var(--dark-pink);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media (max-width: 950px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .resume-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="header-container">
+    <div class="header-left">
+        <img src="../Assets/logo.png" alt="Logo">
+        <h1>Niketa Muschette</h1>
+    </div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#personality">Personality</a>
+        <a href="#ai">AI Review</a>
+        <a href="#development">Development</a>
+        <a href="#favorites">Favorites</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</div>
+</header>
+
+<section id="about">
+<h2>About Me</h2>
+
+<div class="about-container">
+<a href="mailto:niketamuschette@gmail.com">
+<img src="../Assets/niketa2.jpg" alt="Niketa Muschette" class="profile-photo">
+</a>
+
+<div>
+<p><strong>Degree:</strong> BSc in Artificial Intelligence</p>
+<p><strong>Year:</strong> Second Year</p>
+<p><strong>Location:</strong> St. Andrew, Jamaica</p>
+
+<p>I am passionate about Artificial Intelligence, Business Analytics and Data Science. I aim to use technology to create innovative and ethical solutions that positively impact society.</p>
+
+<h3>Vision Statement</h3>
+<p>To become a leading AI professional who develops intelligent systems that improve education and business operations across the Caribbean.</p>
+
+<h3>Mission Statement</h3>
+<p>To continuously build my technical expertise, leadership skills, and ethical awareness while applying Artificial Intelligence to solve real-world problems.</p>
+</div>
+</div>
+</section>
+
+<section id="resume">
+<h2>Resume</h2>
+
+<div class="resume-grid">
+<div>
+<h3>Technical Skills</h3>
+<ul>
+<li>HTML & CSS</li>
+<li>Python</li>
+<li>Java</li>
+<li>MySQL</li>
+<li>GitHub</li>
+</ul>
+</div>
+
+<div>
+<h3>Work Experience</h3>
+<p><strong>Customer Service Representative</strong></p>
+<p>• Assisted customers with inquiries and problem resolution.</p>
+<p>• Managed high-pressure situations professionally.</p>
+<p>• Developed strong teamwork and communication skills.</p>
+</div>
+</div>
+
+<h3>Core Strengths</h3>
+<ol>
+<li>Problem-Solving</li>
+<li>Leadership</li>
+<li>Time Management</li>
+</ol>
+</section>
+
+<section id="personality">
+<h2>Personality & Influence</h2>
+
+<p><strong>Resilient:</strong> I overcome academic challenges by practicing consistently and seeking understanding until I master concepts.</p>
+
+<p><strong>Empathetic:</strong> I collaborate well in group projects by respecting diverse perspectives.</p>
+
+<p><strong>Ambitious:</strong> My ambition pushes me to meet deadlines and continuously improve my technical skills.</p>
+
+<h3>My Hero</h3>
+<p>My greatest hero is Jesus Christ. His resilience, discipline, and commitment to His purpose inspire me daily.</p>
+
+<p>One of my favorite quotes is: “With God all things are possible.” This motivates me during academic challenges.</p>
+
+<p>I also admire Khadine “Miss Kitty” Wilkinson for her determination in completing law school with first-class honours while maintaining a successful media career.</p>
+</section>
+
+<section id="ai">
+<h2>AI Business Review – Smart Tutoring Systems</h2>
+
+<p>My favorite AI business idea is an AI Smart Tutoring System. This system personalizes learning based on a student’s strengths and weaknesses using machine learning algorithms.</p>
+
+<p>In Jamaica, this could help students who lack access to private tutoring by providing adaptive lessons and practice questions.</p>
+
+<p><strong>Ethical Concerns:</strong> Data privacy, algorithm bias, and over-dependence on AI.</p>
+
+<p><strong>Solutions:</strong> Secure data encryption, human teacher oversight, and ethical AI development guidelines.</p>
+
+<p>Example: 
+<a href="https://www.khanacademy.org/khan-labs" target="_blank">
+Khan Academy AI Tutoring
+</a>
+</p>
+</section>
+
+<section id="development">
+<h2>Personal Development – Twelve Pillars</h2>
+
+<h3>Chapter 4 – Goals</h3>
+<p>Setting goals provides direction. I align this by creating academic and career goals each semester.</p>
+
+<h3>Chapter 5 – Time Management</h3>
+<p>Time is valuable. I apply structured study schedules to balance coursework and personal growth.</p>
+
+<h3>Chapter 6 – Associations</h3>
+<p>Surrounding myself with motivated peers strengthens my discipline and mindset.</p>
+
+<h3>Chapter 7 – Lifelong Learning</h3>
+<p>Continuous learning is essential in AI due to constant technological advancements.</p>
+</section>
+
+<section id="favorites">
+<h2>Favourite Books</h2>
+
+<div class="card-container">
+<div class="card">
+<h3>The Twelve Pillars</h3>
+<p>A motivational guide focused on discipline and success principles.</p>
+</div>
+
+<div class="card">
+<h3>Atomic Habits</h3>
+<p>Teaches how small consistent habits create long-term success.</p>
+</div>
+
+<div class="card">
+<h3>The Bible</h3>
+<p>A source of spiritual guidance and strength in my life.</p>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: niketamuschette@gmail.com</p>
+<a href="https://www.github.com" target="_blank" class="button">Visit My GitHub</a>
+</section>
+
+<footer>
+© 2026 Niketa Muschette | Portfolio Website
+</footer>
+
+</body>
+</html>
